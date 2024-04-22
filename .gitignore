@@ -1,0 +1,5 @@
+# docker content which includes the configurations
+docker
+
+# Synology system files
+**/.DS_Store

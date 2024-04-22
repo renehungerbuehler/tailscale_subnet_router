@@ -1,0 +1,15 @@
+---
+services:
+  tailscale_subnet_router:
+    build: .
+    container_name: tailscale_subnet_router
+    restart: always
+    network_mode: "host"
+    volumes:
+      - /var/lib:/var/lib
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - TAILSCALE_AUTH_KEY=${TAILSCALE_AUTH_KEY}
