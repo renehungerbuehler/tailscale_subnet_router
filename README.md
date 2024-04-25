@@ -7,11 +7,6 @@ This Docker setup creates a Tailscale container to enable subnet routing, allowi
 - Docker and Docker Compose must be installed on your host machine.
 - A Tailscale account is necessary for setting up Tailscale authentication.
 
-## Repository Files
-- **Dockerfile**: Builds the Docker image with Tailscale installed.
-- **entrypoint.sh**: Initializes Tailscale and sets up IP forwarding when the container starts.
-- **docker-compose.yml**: Manages the Docker container settings and deployment.
-
 ## Setup and Execution
 
 ### Step 1: Clone the Repository
@@ -22,6 +17,7 @@ cd <repository-directory>
 ```
 
 ### Step 2: Run install Script
+Run the installation script and follow the instructions in the log output.
 ```
 ./install.sh
 ```
