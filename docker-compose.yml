@@ -1,7 +1,7 @@
 ---
 services:
   tailscale_subnet_router:
-    build: .
+    image: tailscale/tailscale:stable
     container_name: tailscale_subnet_router
     restart: always
     network_mode: "host"
