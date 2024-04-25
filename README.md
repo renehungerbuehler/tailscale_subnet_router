@@ -12,8 +12,8 @@ This Docker setup creates a Tailscale container to enable subnet routing, allowi
 ### Step 1: Clone the Repository
 First, clone the repository or download the files into a directory on your local machine.
 ```
-git clone <repository-url>
-cd <repository-directory>
+git clone git@github.com:renehungerbuehler/tailscale_subnet_router.git
+cd tailscale_subnet_router
 ```
 
 ### Step 2: Run install Script
